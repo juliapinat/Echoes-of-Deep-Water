@@ -323,3 +323,5 @@ function estruturarLabirintoCaverna() {
 
     // Inserção dos predadores da fauna cega
     for (let i = 0; i < 10; i++) {
+    }
+}
