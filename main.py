@@ -258,10 +258,10 @@ def gerar_mapa_procedural():
     obstacles.append(pygame.Rect(0, ALTURA_MUNDO-40, LARGURA_MUNDO, 40))
     obstacles.append(pygame.Rect(0, 0, 40, ALTURA_MUNDO))
 
-        obstacles.append(pygame.Rect(LARGURA_MUNDO - 40, 0, 40, ALTURA_MUNDO))
+    obstacles.append(pygame.Rect(LARGURA_MUNDO - 40, 0, 40, ALTURA_MUNDO))
         
         # Internal Cave Columns/Ruins Blockers
-        for _ in range(35):
+    for _ in range(35):
             w = random.randint(120, 350)
             h = random.randint(120, 350)
             x = random.randint(200, LARGURA_MUNDO - 500)
@@ -271,7 +271,7 @@ def gerar_mapa_procedural():
             if not pygame.Rect(x, y, w, h).colliderect(pygame.Rect(LARGURA_MUNDO // 2 - 200, ALTURA_MUNDO // 2 - 200, 400, 400)):
                 obstacles.append(pygame.Rect(x, y, w, h))
                 
-        return obstacles
+    return obstacles
 
 # --- RUNTIME CORE ---
 def executar_jogo():
